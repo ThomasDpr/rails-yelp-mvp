@@ -1,0 +1,9 @@
+<h1>Liste de tous les restaurants:</h1>
+
+<div class="container">
+  <ul>
+    <% @restaurants.each do |restaurant| %>
+      <li class="card-body list-unstyled"><%= link_to restaurant.name, restaurant_path(restaurant)%></li>
+    <% end %>
+  </ul>
+</div>
